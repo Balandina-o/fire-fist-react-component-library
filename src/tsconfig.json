@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    //default
+    "target": "es5",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    //added
+    "module": "esnext",
+    "jsx": "react", /* Преобразование JSX в код React. */
+    "moduleResolution": "node",
+    "declaration": true, /* Вывод файла .d.ts для типов нашей библиотеки. */
+    "declarationDir": "types", /* Куда помещать файлы .d.ts. */
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "strictNullChecks": false,
+    "isolatedModules": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "sourceMap": true, /* Сопоставление (маппинг) JS-кода с исходным текстом TS-файла для отладки. */
+    //"experimentalDecorators": true,
+    "useDefineForClassFields": true,
+
+    "rootDir": "./",
+    "outDir": "dist" /* Каталог, где будет сгенерирован проект. */
+  }
+}
+
