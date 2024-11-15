@@ -1,24 +1,19 @@
 {
   "compilerOptions": {
-    //default
     "target": "es5",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-
-    //added
-    "lib": [  
-      "esnext",  
-      "dom",  
-      "dom.iterable"  
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
     ],
-
     "module": "esnext",
-    "jsx": "react", /** Преобразование JSX в код React. */
+    "jsx": "react-jsx",
     "moduleResolution": "node",
-    "declaration": true, /** Вывод файла .d.ts для типов нашей библиотеки. */
-    //"declarationDir": "types", /** Куда помещать файлы .d.ts. */
+    "declaration": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
@@ -30,14 +25,20 @@
     "noImplicitThis": false,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "sourceMap": true, /** Сопоставление (маппинг) JS-кода с исходным текстом TS-файла для отладки. */
-    //"experimentalDecorators": true,
+    "sourceMap": true,
     "useDefineForClassFields": true,
-
     "rootDir": "./",
-    "outDir": "./dist/" /** Каталог, где будет сгенерирован проект. */
+    "outDir": "./dist/",
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
   },
-
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "./src/stories/"]
+  "include": [
+    "src",
+    "src/anotherIndex.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./src/stories/"
+  ]
 }

@@ -1,5 +1,5 @@
 # fire-fist-react-component-library
-<i><b>fire-fist</b></i> is an npm library of ready-to-use React-GUI-components that is designed to speed up software development.<br>
+<i><b>fire-fist</b></i> is an npm-library of ready-to-use React-GUI-components that is designed to speed up software development.<br>
 
 Project Description
 ---
@@ -14,3 +14,8 @@ Project Description
 Quick start
 ---
 Когда-нибудь здесь что-нибудь появится
+
+<!--
+"scripts": {
+    "start": "webpack-dev-server --open",
+>

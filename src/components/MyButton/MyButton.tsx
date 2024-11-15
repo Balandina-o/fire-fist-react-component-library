@@ -1,4 +1,10 @@
-import React, { FC } from "react";
+/**
+ * Модуль экспортирует компонент базовой кнопки.
+ * 
+ * @copyright Balandina-o 2024
+ */
+
+import { FC } from "react";
 
 export interface MyButtonProps {
     label: string;

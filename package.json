@@ -5,7 +5,7 @@
   "homepage": "http://Balandina-o.github.io/fire-fist-react-component-library",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "react-scripts start",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
@@ -17,6 +17,7 @@
   "author": "Balandina-o",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@chromatic-com/storybook": "^3.2.2",
     "@storybook/addon-essentials": "^8.4.2",
     "@storybook/addon-interactions": "^8.4.2",
@@ -35,7 +36,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "storybook": "^8.4.2",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.3",
@@ -49,5 +50,17 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
