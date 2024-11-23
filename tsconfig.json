@@ -1,43 +1,30 @@
 {
   "compilerOptions": {
-    //default
-    "target": "es5",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
     "strict": true,
-    "skipLibCheck": true,
-
-    //added
-    "lib": [  
-      "esnext",  
-      "dom",  
-      "dom.iterable"  
+    "lib": [
+      "es2015",
+      "dom",
+      "dom.iterable"
     ],
-    
-    "module": "esnext",
-    "jsx": "react", /** Преобразование JSX в код React. */
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "jsx": "react-jsx",
     "declaration": true, /** Вывод файла .d.ts для типов нашей библиотеки. */
-    //"declarationDir": "types", /** Куда помещать файлы .d.ts. */
+    "declarationDir": "./dist/types", /** Куда помещать файлы .d.ts. */
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "downlevelIteration": true,
-    "strictNullChecks": false,
-    "isolatedModules": true,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "sourceMap": true, /** Сопоставление (маппинг) JS-кода с исходным текстом TS-файла для отладки. */
-    //"experimentalDecorators": true,
-    "useDefineForClassFields": true,
-
     "rootDir": "./",
-    "outDir": "./dist/" /** Каталог, где будет сгенерирован проект. */
+    "outDir": "./dist/",
+    "esModuleInterop" :true,
+    "noEmit": false
   },
-
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "./dist/",
+    "./src/stories/",
+    "public",
+    ".storybook"
+  ]
 }

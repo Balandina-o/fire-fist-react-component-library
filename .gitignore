@@ -1,2 +1,7 @@
 node_modules
 dist
+public 
+
+*storybook.log
+stories
+storybook-static

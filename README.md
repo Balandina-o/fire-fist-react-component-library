@@ -1,5 +1,5 @@
 # 🔥fire-fist-react-component-library🔥
-<i><b><ins>fire-fist</ins></b></i> is an npm library of ready-to-use React-GUI-components that is designed to speed up software development.<br>
+<i><b><ins>fire-fist</ins></b></i> is an npm-library of ready-to-use React-GUI-components that is designed to speed up software development.<br>
 
 Project Description
 ---
@@ -18,3 +18,7 @@ Quick start
 Storybook
 ---
 Ознакомиться с содержимым библиотеки в <b>Storybook</b> можно на GitHubPages => [здесь](http://Balandina-o.github.io/fire-fist-react-component-library)
+<!--
+"scripts": {
+    "start": "webpack-dev-server --open",
+>

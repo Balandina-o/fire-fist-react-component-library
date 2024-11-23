@@ -14,7 +14,6 @@
     "plugins": [
         "react",
         "import",
-        "@typescript-eslint",
-        "@microsoft/eslint-plugin-sdl"
+        "@typescript-eslint"
     ]
 }
