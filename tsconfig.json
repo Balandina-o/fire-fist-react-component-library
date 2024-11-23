@@ -1,44 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
     "strict": true,
-    "skipLibCheck": true,
     "lib": [
-      "esnext",
+      "es2015",
       "dom",
       "dom.iterable"
     ],
-    "module": "esnext",
+    "module": "CommonJS",
     "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "declaration": true,
+    "declaration": true, /** Вывод файла .d.ts для типов нашей библиотеки. */
+    "declarationDir": "./dist/types", /** Куда помещать файлы .d.ts. */
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "downlevelIteration": true,
-    "strictNullChecks": false,
-    "isolatedModules": true,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "sourceMap": true,
-    "useDefineForClassFields": true,
     "rootDir": "./",
     "outDir": "./dist/",
-    "noFallthroughCasesInSwitch": true,
-    "noEmit": true
+    "esModuleInterop" :true,
+    "noEmit": false
   },
   "include": [
-    "src",
-    "src/anotherIndex.tsx"
+    "src"
   ],
   "exclude": [
     "node_modules",
-    "dist",
-    "./src/stories/"
+    "./dist/",
+    "./src/stories/",
+    "public",
+    ".storybook"
   ]
 }

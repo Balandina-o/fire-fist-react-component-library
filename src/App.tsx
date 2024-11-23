@@ -5,13 +5,13 @@
  * @copyright Balandina-o 2024
  */
 
-import { MyButton } from "./components";
+import { CommonButton } from "./components";
 
 
 function App() {
   return (
     <div className="App">
-      <MyButton label ='Эйс лучший мужчина на свете!'/>
+      <CommonButton label ='Эйс лучший мужчина на свете!'/>
     </div>
   );
 }

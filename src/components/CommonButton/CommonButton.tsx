@@ -6,14 +6,14 @@
 
 import { FC } from "react";
 
-export interface MyButtonProps {
+export declare interface CommonButtonProps {
     label: string;
 }
 
-export const MyButton: FC<MyButtonProps> = ( { label } ) => {
+export const CommonButton: FC<CommonButtonProps> = ( { label } ) => {
     return <button>
-        { label }
+        { label } Проверка
     </button>;
 };
 
-export default MyButton;
+export default CommonButton;

@@ -1,0 +1,1 @@
+declare module 'fire-fist-react-component-library'

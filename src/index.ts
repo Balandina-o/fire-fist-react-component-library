@@ -4,16 +4,15 @@
  * 
  * @copyright Balandina-o 2024
  */
+import ReactDOM from "react-dom/client";
+import React from "react";
+import App from "./App";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-
-import MyButton from './components/MyButton/MyButton';
+import CommonButton from './components/CommonButton/CommonButton';
+//import '../index.d.ts';
 
 /** ---- Экспорт компонентов ---- */
-export { MyButton }
+export { CommonButton }
 
-/** ---- Сoздание App ---- */
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(React.createElement(App));
