@@ -6,12 +6,14 @@
 
 import { FC } from "react";
 
+import './CommonButton.scss';
+
 export declare interface CommonButtonProps {
     label: string;
 }
 
 export const CommonButton: FC<CommonButtonProps> = ( { label } ) => {
-    return <button>
+    return <button className = "common-button">
         { label } Проверка
     </button>;
 };
