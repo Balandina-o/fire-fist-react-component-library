@@ -4,6 +4,7 @@
   "description": "",
   "homepage": "http://Balandina-o.github.io/fire-fist-react-component-library",
   "main": "./dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack",
