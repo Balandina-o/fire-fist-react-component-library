@@ -1,7 +1,7 @@
 {
   "name": "fire-fist-react-component-library",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "An open source library of ready-to-use React-GUI-components.",
   "homepage": "http://Balandina-o.github.io/fire-fist-react-component-library",
   "main": "./dist/index.js",
   "types": "index.d.ts",
@@ -14,6 +14,13 @@
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "storybook build"
   },
+  "publishConfig": { 
+   "registry":"https://npm.pkg.github.com"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/Balandina-o/fire-fist-react-component-library.git"
+	},
   "keywords": [],
   "author": "Balandina-o",
   "license": "MIT",
@@ -55,9 +62,7 @@
     "react": "*",
     "react-dom": "*"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "browserslist": {
     "production": [
       ">0.2%",
